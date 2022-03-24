@@ -3,6 +3,7 @@ const express = require('express');
 const app = express();
 const mongoose = require('mongoose');
 const Trade = require('../models/blog');
+const os = require('os');
 
 // register view engine
 app.set('view engine', 'ejs');
@@ -21,15 +22,18 @@ Trade.findOne({'owner': 'Self'}, function (err, docs){
             console.log(docs);
 })
 
+// getting working dir
+let dir = __dirname;
+dir = dir.slice(0, -10); // slice off /assets/js/app.js to get working directory up to "/CapitolGains"
 
 // routing 
 app.get('/', (req, res) => {
     //res.send('<p>Homepage</p>');
-    res.sendFile('/Users/cambenassi/Documents/Code/UML/3. Junior Year/GUI II/Test Env/views/index.html'); //{ root:__dirname} - second parameter for relative path name
+    res.sendFile(dir + '/views/index.html'); //{ root:__dirname} - second parameter for relative path name
 });
 
 app.get('/about', (req, res) => {
-    res.sendFile('/Users/cambenassi/Documents/Code/UML/3. Junior Year/GUI II/Test Env/views/about.html')
+    res.sendFile(dir + '/views/about.html')
 });
 
 // redirects
@@ -41,7 +45,7 @@ app.get('/about-us', (req, res) => {
 
 // 404 page
 app.use((req, res) => {
-    res.status(404).sendFile('/Users/cambenassi/Documents/Code/UML/3. Junior Year/GUI II/Test Env/views/404.html');
+    res.status(404).sendFile(dir + '/views/404.html');
 });
 
 
