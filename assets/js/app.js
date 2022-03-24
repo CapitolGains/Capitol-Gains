@@ -3,13 +3,11 @@ const express = require('express');
 const app = express();
 const mongoose = require('mongoose');
 const Trade = require('../models/blog');
-const os = require('os');
 
 // register view engine
 app.set('view engine', 'ejs');
 
 // setting dynamic port number for heroku & 3000 for localhost
-//var port_number = server.listen(process.env.PORT || 3000);
 let port = process.env.PORT || 3000;
 
 // connect to mongodb & listen for requests on sucessful connection
