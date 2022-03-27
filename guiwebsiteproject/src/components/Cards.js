@@ -12,7 +12,7 @@ function Cards() {
             <CardItem
               src={Placeholder}
               text='Politician Name'
-              path='/'
+              path='/PoliticianBio'
             />
           </ul>
         </div>
