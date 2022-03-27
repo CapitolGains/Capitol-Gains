@@ -4,6 +4,7 @@
   padding: 0;
   font-family: 'PT Sans', sans-serif;
 }
+
 /*
 .homepage,
 .about,
@@ -40,6 +41,8 @@
   font-size: 100px;
 }
 */
+
+/*** Homepage ***/
 .topmoverheader {
   margin-top:20px;
 }
@@ -48,29 +51,58 @@
   border: 2px solid;
   margin: 40px;
   padding: 30px;
+  align-items: center;
 }
 
 .topmoverpie-pic, .topmoverline-pic {
-  height: 200px;
+  height: fill;
   width: fill;
+  align-items: center;
 }
 
 .topmover-pic {
-  border-radius: 50%;
-  height:150px;
-  width:80%;
-  margin-left: 10%;
+  border-radius: 30%;
+  height: fill;
+  width: fill;
+  align-items: center;
 }
 
 .topmover-info {
   text-align: center;
 }
-.recent-transaction, .homepage-graph {
+
+
+.homepage-graph {
   border: 2px solid; 
+  align-items: center;
 }
 
+
+/*** Politician Page ***/
 .politicianpic {
   margin-top: 40px;
   height: fill;
   width:fill;
+}
+
+/*** About Page ***/
+.teaminfoheader, .aboutdataheader {
+  margin: 20px 0px 20px 0px;
+}
+
+.teaminfopic {
+  width: 90px;
+  height: 90px;
+  border-radius: 50%;
+  float: left;
+  align-items: center;
+  margin: 20px;
+}
+
+.teaminfo p{
+  margin-left: 130px;
+}
+
+.aboutdata h5 {
+  margin: 0px 0px 20px 0px;
 }
