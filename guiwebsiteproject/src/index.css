@@ -8,7 +8,7 @@
 
 body {
   font-family: 'Poppins', sans-serif;
-  background-color: #b8cf69;
+  background-color: green;
 }
 
 /*.container {
@@ -22,29 +22,50 @@ body {
   background-color: white;
 }*/
 
-.bio_info {
-  max-width: 800px;
+
+
+.full_bio {
   background-color: white;
 
-  margin: 20px auto;
+  margin: 20px 0px 20px 0px;
   border-radius: 5px;
   border: 2px solid;
-  /*padding: 10px 20px;*/
-  display: inline-block;
+
+  overflow-x: auto;
+  overflow-y: hidden;
 }
 
-.bio_info img {
+
+.full_bio img {
   max-width: 200px;
   padding: 20px;
   float: left;
+  /*
+  float: left;
+  */
 }
 
-.bio_info tr {
+
+.bio_info {
+  /*
   display: inline;
-  padding: 5px;
-  align-self: left;
+  */
+  max-width: 600px;
+  float: left;
+  padding: 20px;
 }
 
+.bio_info p {
+  display: inline;
+  padding-right: 2px;
+}
+
+
+.bio_info td {
+  padding-right: 50px;
+}
+
+/*
 .bio_info tr {
   text-align: left;
 }
@@ -52,6 +73,8 @@ body {
 .bio_info .rightside {
   text-indent: 3em;
 }*/
+
+
 
 .header {
   display: flex;
@@ -61,13 +84,23 @@ body {
 }
 
 
+
+.bloc-tabs {
+  float: left;
+  padding-right: 20%;
+}
+
+.content-tabs {
+  clear: both;
+}
+
 button {
   display: inline-block;
   background: grey;
   color: #fff;
   border: none;
   padding: 5px 20px;
-  margin-top: 5px;
+  margin-top: 10px;
   cursor: pointer;
   text-decoration: none;
   font-size: 15px;
@@ -87,9 +120,10 @@ button {
   width: 100%;
 }
 
+
 /***Trades***/
 .trade {
-  max-width: 800px;
+  margin: 0 auto;
   border: 3px solid black;
   border-radius: 5px;
   background-color: white;
