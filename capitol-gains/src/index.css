@@ -22,28 +22,49 @@ body {
   background-color: white;
 }*/
 
-.bio_info {
+
+
+.full_bio {
   max-width: 800px;
   background-color: white;
 
   margin: 0 auto;
   border-radius: 5px;
-  /*padding: 10px 20px;*/
-  display: inline-block;
+
+  overflow-x: auto;
+  overflow-y: hidden;
 }
 
-.bio_info img {
+
+.full_bio img {
   max-width: 200px;
   padding: 20px;
+  /*
   float: left;
+  */
 }
 
-.bio_info tr {
+
+.bio_info {
+  /*
   display: inline;
-  padding: 5px;
-  align-self: left;
+  */
+  max-width: 600px;
+  float: right;
+  padding: 20px;
 }
 
+.bio_info p {
+  display: inline;
+  padding-right: 2px;
+}
+
+
+.bio_info td {
+  padding-right: 50px;
+}
+
+/*
 .bio_info tr {
   text-align: left;
 }
@@ -52,6 +73,8 @@ body {
   text-indent: 3em;
 }*/
 
+
+
 .header {
   display: flex;
   justify-content: space-between;
@@ -59,6 +82,16 @@ body {
   margin-bottom: 20px;
 }
 
+
+
+.bloc-tabs {
+  float: right;
+  padding-right: 20%;
+}
+
+.content-tabs {
+  clear: both;
+}
 
 button {
   display: inline-block;
@@ -85,6 +118,7 @@ button {
   display: block;
   width: 100%;
 }
+
 
 /***Trades***/
 .trade {
