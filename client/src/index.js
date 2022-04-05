@@ -12,11 +12,7 @@ import About from "./routes/about";
 const rootElement = document.getElementById("root");
 const root = createRoot(rootElement);
 
-// FIX ROUTING ELEMENTS FOR POLITICIAN
-// 1. put placecholder calls in
-// 2. get API calls on backend working, add in virtual database abstraction layer
-
-// what to render
+// what to render and overall routing for the site
 root.render(
   <StrictMode>
     <BrowserRouter>

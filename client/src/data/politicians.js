@@ -1,4 +1,4 @@
-// REPLACE THIS FILE WITH MONGO CALLS
+// REPLACE THIS FILE WITH MONGO CALLS, this is a temporary file to simulate DB calls
 
 let politicians = [
   {

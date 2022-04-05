@@ -1,10 +1,14 @@
 import { Link } from "react-router-dom";
 import { getPoliticians } from "../data/politicians";
 
+// page with the list of politicians
+
 export default function Politicians() {
-  // replace this call with the mongodb call
+  // REPLACE WITH MONGODB CALL
+  // get all politicians data object
   let politicians = getPoliticians();
 
+  // generate a link for every politician on data object
   return (
     <div>
       <nav>

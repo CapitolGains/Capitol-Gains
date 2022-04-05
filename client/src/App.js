@@ -1,5 +1,6 @@
 import { Outlet, Link } from 'react-router-dom';
 
+// just a temporary navbar for now
 export default function App() {
   return (
     <div>
