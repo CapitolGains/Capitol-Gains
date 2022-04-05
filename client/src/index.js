@@ -12,6 +12,10 @@ import About from "./routes/about";
 const rootElement = document.getElementById("root");
 const root = createRoot(rootElement);
 
+// FIX ROUTING ELEMENTS FOR POLITICIAN
+// 1. put placecholder calls in
+// 2. get API calls on backend working, add in virtual database abstraction layer
+
 // what to render
 root.render(
   <StrictMode>
@@ -21,7 +25,7 @@ root.render(
           <Route path="home" element={<Home />} />
           <Route path="politicians" element={<Politicians />} />
           <Route path="politician" element={<Politician />}>
-            <Route path=":id" element={<App />} />
+            <Route path=":politicianId" element={<Politician />} />
           </Route>
           <Route path="about" element={<About />} />
           <Route
