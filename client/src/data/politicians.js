@@ -32,6 +32,6 @@ export function getPoliticians() {
 // return a specific politician id
 export function getPolitician(id) {
   return politicians.find(
-    (politician) => politician.id == id
+    (politician) => politician.id === id
   );
 }
