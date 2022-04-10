@@ -7,65 +7,7 @@ import Cards from "../Cards"
 const Politicians = () => {
     return (
     <>
-    <div className="grid">
-    <Container>
-        <Row>
-            <Col lg={2} md={3} sm={6}>
-                <Cards/>
-            </Col>
-            <Col lg={2} md={3} sm={6}>
-                <Cards/>
-            </Col>
-            <Col lg={2} md={3} sm={6}>
-                <Cards/>
-            </Col>
-            <Col lg={2} md={3} sm={6}>
-                <Cards/>
-            </Col>
-            <Col lg={2} md={3} sm={6}>
-                <Cards/>
-            </Col>
-            <Col lg={2} md={3} sm={6}>
-                <Cards/>
-            </Col>
-            <Col lg={2} md={3} sm={6}>
-                <Cards/>
-            </Col>
-            <Col lg={2} md={3} sm={6}>
-                <Cards/>
-            </Col>
-            <Col lg={2} md={3} sm={6}>
-                <Cards/>
-            </Col><Col lg={2} md={3} sm={6}>
-                <Cards/>
-            </Col>
-            <Col lg={2} md={3} sm={6}>
-                <Cards/>
-            </Col>
-            <Col lg={2} md={3} sm={6}>
-                <Cards/>
-            </Col>
-            <Col lg={2} md={3} sm={6}>
-                <Cards/>
-            </Col>
-            <Col lg={2} md={3} sm={6}>
-                <Cards/>
-            </Col>
-            <Col lg={2} md={3} sm={6}>
-                <Cards/>
-            </Col>
-            <Col lg={2} md={3} sm={6}>
-                <Cards/>
-            </Col>
-            <Col lg={2} md={3} sm={6}>
-                <Cards/>
-            </Col>
-            <Col lg={2} md={3} sm={6}>
-                <Cards/>
-            </Col>
-        </Row>
-    </Container>
-    </div>
+    <Cards/>
     </>
     );
   };
