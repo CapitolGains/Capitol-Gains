@@ -23,18 +23,18 @@ let politicians = [
       id: 3,
     },
     {
-        name: "George Washington",
-        state: "DC",
-        congressType: "Representative",
-        party: "N",
-        id: 4,
+      name: "George Washington",
+      state: "DC",
+      congressType: "Representative",
+      party: "N",
+      id: 4,
     },
     {
-        name: "Joe Kennedy",
-        state: "MA",
-        congressType: "Representative",
-        party: "D",
-        id: 3,
+      name: "Joe Kennedy",
+      state: "MA",
+      congressType: "Representative",
+      party: "D",
+      id: 5,
     }
   ];
   

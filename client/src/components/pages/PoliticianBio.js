@@ -3,6 +3,7 @@ import { useState } from 'react'
 import Header from '../Header'
 import Bio from '../Bio'
 import Tabs from '../Tabs'
+import '../../App.css'
 
 const App = () => {
 

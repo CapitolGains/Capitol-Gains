@@ -2,14 +2,19 @@ import React from 'react';
 import './Cards.css';
 import CardItem from './CardItem';
 import Placeholder from './images/placeholder.jpg'
-import { Stack, Container, Row, Col } from 'react-bootstrap';
+//import { Stack, Container, Row, Col } from 'react-bootstrap';
 import { getPoliticians } from "../components/politicians";
 import { useEffect } from "react";
-import trades from './Trades';
+//import trades from './Trades';
+import $ from "jquery";
+ 
+let politicians = getPoliticians();
+let sortMethod = "name";
 
-function sorted(politicians, sortMethod) {
-  politicians = getPoliticians();
-  nameSelect(document.getElementById('inputname').value, politicians)
+function sorted(politicians, sort) {
+  sortMethod = sort;
+  //politicians = getPoliticians();
+  //nameSelect(document.getElementById('inputname').value, politicians)
 
   if (sortMethod === "new") {
       function dateComparison(a, b) {
@@ -41,8 +46,8 @@ function sorted(politicians, sortMethod) {
     politicians.sort((a, b) => (a.congressType > b.congressType) ? 1 : -1);
   } 
 
-  //reload();
-  console.log("Sorted:", politicians);
+  console.log("Sorted end:", politicians);
+  redo();
   return politicians;
 }
 
@@ -56,13 +61,20 @@ function nameSelect (nameSegment, politicians) {
     console.log("After name:", nameSegment, " politicians:", politicians);
   }
 
+  politicians = sorted(politicians,sortMethod); //sort selected names
+  redo();
   return politicians;
 }
 
 function redo() { 
-  document.getElementById("cards__container").reload();
-  //document.getElementById("cards__container").location.reload(false);
+  //console.log("in redo");
+  //console.log("Redo Politicians before:", politicians);
+  //$('#cards__container').load('#cards__container');
+  //console.log("Redo Politicians after:", politicians);
   
+  //$("#cards__container").load("#cards__container");
+  //$("#cards__items").load(window.location.href + " #cards__items" );
+
 }
 
 function drop() {
@@ -86,7 +98,7 @@ window.onclick = function(event) {
 function Cards() {
     // REPLACE WITH MONGODB CALL
     // get all politicians data object
-    let politicians = getPoliticians();
+    politicians = getPoliticians();
   
     // React function to handle data requests
     useEffect(() => {
@@ -120,45 +132,47 @@ function Cards() {
     });
 
   /*Testing*/
-    //let sortMethod = "name";     //get this from user
+  let sortMethod = "name";     //get this from user
+  sorted(politicians, sortMethod);  //initial page sort
+
     //let politicianName = "Bernie";
 
     //console.log("Old Politicians: ", politicians);
     //politicians = nameSelect (politicianName, politicians);
     //console.log("New Politicians: ", politicians);
 
-  //sorted(politicians, sortMethod);
 
   return (
         <div className='cards'>
           <div className='topbar'>
-              <label for="poli-name">Name:</label>
-              <input type="text" id="inputname" name="inputname"/>
-              <button onClick={() => (politicians = nameSelect(document.getElementById('inputname').value, politicians))}>Search</button>
+              <label id="inputname">Name:</label>
+              <input type="text" id="inputname" className="inputname" onInput={() => (politicians = nameSelect(document.querySelector('input').value, politicians))}/>
+              <button className="searchBtn" onClick={() => (politicians = nameSelect(document.getElementById('inputname').value, politicians))}>Search</button>
             <div className='searchbar'>
               <div className="dropdown">
+                <label id="droplabel">Sort:</label>
                 <button onClick={() => drop()} className="dropbtn">Dropdown</button>
                 <div id="dropped" className="dropdown-content">
-                  <button onClick={() => (politicians = sorted(politicians, 'name'))}>Name</button>
-                  <button onClick={() => (politicians = sorted(politicians, "state"))}>State</button>
-                  <button onClick={() => (politicians = sorted(politicians, "sector"))}>Sector</button>
-                  <button onClick={() => (politicians = sorted(politicians, "party"))}>Party</button>
-                  <button onClick={() => (politicians = sorted(politicians, "chamber"))}>Chamber</button>
-                  <button onClick={() => (politicians = sorted(politicians, "age"))}>Age</button>
+                  <button className="dropdown-option" onClick={() => (politicians = sorted(politicians, 'name'))}>Name</button>
+                  <button className="dropdown-option" onClick={() => (politicians = sorted(politicians, "state"))}>State</button>
+                  <button className="dropdown-option" onClick={() => (politicians = sorted(politicians, "sector"))}>Sector</button>
+                  <button className="dropdown-option" onClick={() => (politicians = sorted(politicians, "party"))}>Party</button>
+                  <button className="dropdown-option" onClick={() => (politicians = sorted(politicians, "chamber"))}>Chamber</button>
+                  <button className="dropdown-option" onClick={() => (politicians = sorted(politicians, "age"))}>Age</button>
                 </div>
               </div>
             </div>
           </div>
-          <div className='cards__container' id="cards__container">
+          <div className='cards__container' id="cards__container" class="cards__container">
             <div className='cards__wrapper'>
               <ul className='cards__items'>
-              {politicians.map((politician) => (
-                <CardItem
-                  src={Placeholder}
-                  text={politician.name}
-                  path={`/politician/${politician.id}`}
-                  key={politician.id}
-                />
+                {politicians.map((politician) => (
+                  <CardItem
+                    src={Placeholder}
+                    text={politician.name}
+                    path={`/politician/${politician.id}`}
+                    key={politician.id}
+                  />
                 ))}
               </ul>
             </div>
