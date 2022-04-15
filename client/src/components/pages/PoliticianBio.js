@@ -1,4 +1,4 @@
-import { useState } from 'react'
+import { useState } from 'react';
 
 import Header from '../Header'
 import Bio from '../Bio'

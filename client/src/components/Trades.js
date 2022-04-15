@@ -1,4 +1,4 @@
-import Trade from './Trade'
+import Trade from './Trade';
 
 function sorted(trades, sortMethod) {
     if (sortMethod === "new") { //sort by oldest

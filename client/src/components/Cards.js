@@ -1,11 +1,9 @@
-import React from 'react';
+import React, { useEffect } from 'react';
+
 import './Cards.css';
 import CardItem from './CardItem';
 import Placeholder from './images/placeholder.jpg'
-//import { Stack, Container, Row, Col } from 'react-bootstrap';
 import { getPoliticians } from "../components/politicians";
-import { useEffect } from "react";
-//import trades from './Trades';
 import $ from "jquery";
  
 let politicians = getPoliticians();

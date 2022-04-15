@@ -1,6 +1,7 @@
 import React from 'react';
+import { Container, Row, Col } from 'react-bootstrap';
+
 import '../../App.css';
-import { Stack, Container, Row, Col } from 'react-bootstrap';
 import placeholder from "../images/placeholder.jpg"
 
 const About = () => {
@@ -32,8 +33,6 @@ const About = () => {
                     Data and Visualization Team making sure our website
                     shows precisely what's important.</p>
                 </Col>
-        </Row>
-        <Row className='teaminfo'>
                 <Col xl={4} lg={6} md={6} sm={12}>
                 <img className="teaminfopic" src={placeholder} alt="placeholder"/>
                 <h5>Cam</h5>

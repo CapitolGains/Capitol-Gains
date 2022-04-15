@@ -1,11 +1,10 @@
-import React from 'react';
-import '../../App.css';
-import { Stack, Container, Row, Col } from 'react-bootstrap';
-import placeholder from "../images/placeholder.jpg"
-import pie from "../images/Pie.jpg"
-import line from "../images/line.png"
-import { useState } from 'react'
+import React, { useState } from 'react';
+import { Container, Row, Col } from 'react-bootstrap';
 
+import '../../App.css';
+import placeholder from '../images/placeholder.jpg';
+import pie from '../images/Pie.jpg';
+import line from '../images/line.png';
 import Trades from '../Trades'
 
 

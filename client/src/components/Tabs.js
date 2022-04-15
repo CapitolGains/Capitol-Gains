@@ -1,5 +1,8 @@
 import { useState } from "react";
+
 import Trades from './Trades'
+import BarChart from "./BarChart";
+import chartjsPieChart from './images/chartjsPieChart.jpg';
 
 //function Tabs(trades) {
 const Tabs = ({ trades }) => {
@@ -42,13 +45,14 @@ const Tabs = ({ trades }) => {
         <div
           className={toggleState === 2 ? "active-content" : "content"}
         >
-          <h2>Portfolio</h2>
+          <BarChart />
         </div>
 
         <div
           className={toggleState === 3 ? "active-content" : "content"}
         >
-          <h2>Performance</h2>
+          <h2>Most Profitable Stocks</h2>
+          <img src={chartjsPieChart}></img>
         </div>
       </div>
     </div>
