@@ -1,55 +1,40 @@
 // REPLACE THIS FILE WITH MONGO CALLS, this is a temporary file to simulate DB calls
-import bernie from "./images/bernie.jpg"
-import kennedy from "./images/kennedy.jpg"
-import lincoln from "./images/lincoln.jpg"
-import mcconnell from "./images/mcconnell.jpg"
-import washington from "./images/washington.jpg"
 
 let politicians = [
     {
       name: "Bernie Sanders",
-      dob: "September 8, 1941",
-      state: "Vermont",
+      state: "VT",
       congressType: "Senator",
-      party: "Democrat",
-      photo: bernie,
+      party: "D",
       id: 1,
     },
     {
       name: "Mitch McConnell",
-      dob: "February 20, 1942",
-      state: "Kentucky",
+      state: "KY",
       congressType: "Senator",
-      party: "Republican",
-      photo: mcconnell,
+      party: "R",
       id: 2,
     },
     {
       name: "Abraham Lincoln",
-      dob: "February 12, 1809",
-      state: "Washington DC",
+      state: "DC",
       congressType: "Representative",
-      party: "National Union Party",
-      photo: lincoln,
+      party: "N",
       id: 3,
     },
     {
-        name: "George Washington",
-        dob: "February 22, 1732",
-        state: "Washington DC",
-        congressType: "Representative",
-        party: "Independent",
-        photo: washington,
-        id: 4,
+      name: "George Washington",
+      state: "DC",
+      congressType: "Representative",
+      party: "N",
+      id: 4,
     },
     {
-        name: "Joe Kennedy",
-        dob: "October 4, 1980",
-        state: "Massachusetts",
-        congressType: "Representative",
-        party: "Democrat",
-        photo: kennedy,
-        id: 5,
+      name: "Joe Kennedy",
+      state: "MA",
+      congressType: "Representative",
+      party: "D",
+      id: 5,
     }
   ];
   
