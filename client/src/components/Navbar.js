@@ -1,8 +1,7 @@
 import React, { useState, useEffect } from 'react';
-import { NavLink } from 'react-router-dom';
-
+import { Nav, NavLink, NavMenu } from 'react-router-dom';
 import './Navbar.css';
-import logo from './images/logo.png';
+import logo from './images/logo.png'
 
 
 function Navbar() {

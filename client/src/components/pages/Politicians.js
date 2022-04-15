@@ -1,7 +1,8 @@
 import React from 'react';
-
 import '../../App.css';
-import Cards from '../Cards';
+import { Stack, Container, Row, Col } from 'react-bootstrap';
+import placeholder from "../images/placeholder.jpg"
+import Cards from "../Cards"
 
 const Politicians = () => {
     return (

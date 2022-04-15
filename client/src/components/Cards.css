@@ -67,15 +67,46 @@
   
   .cards__item__info {
     padding: 0px 30px 10px;
+    color: black;
+  }
+
+  .topbar {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+
+  .inputname {
+    margin-left: 5px;
+    min-height: 32px;
   }
   
-  .dropbtn {
-    background-color: #3498DB;
+  .searchBtn {
+    margin: 5px;
+    background-color: red;
+    text-align: center;
     color: white;
-    padding: 16px;
     font-size: 16px;
     border: none;
     cursor: pointer;
+    width: 100px;
+    border-radius: 5px;
+  }
+
+  .dropdown-option {
+    width: 102px;
+  }
+
+  .dropbtn {
+    margin-left: 5px;
+    background-color: #3498DB;
+    text-align: center;
+    color: white;
+    width: 100px;
+    font-size: 16px;
+    border: none;
+    cursor: pointer;
+    border-radius: 5px;
   }
   
   .dropbtn:hover, .dropbtn:focus {
@@ -87,11 +118,14 @@
     display: inline-block;
   }
   
+  .dropped {
+  }
+
   .dropdown-content {
     display: none;
     position: absolute;
     background-color: #f1f1f1;
-    min-width: 160px;
+    width: 100px;
     overflow: auto;
     box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
     z-index: 1;
