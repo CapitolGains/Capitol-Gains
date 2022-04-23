@@ -1,5 +1,6 @@
 import React, { useState } from 'react';
-import { useParams } from 'react-router-dom';
+import { useParams, Link } from 'react-router-dom';
+import { Container, Row, Col } from 'react-bootstrap'
 
 import { getPolitician } from '../politicians';
 import Bio from '../Bio';
@@ -45,6 +46,7 @@ export default function Politician() {
     {
       id: 1,
       date: '5/6/2021',
+      politician: <Link to={`/politician/${politician.id}`}> {politician.name}</Link>,
       stock: 'TSLA',
       sector: 'Auto',
       buy_sell: 'Sell',
@@ -119,9 +121,16 @@ export default function Politician() {
   */
 
   return (
+    <>
+    <div className="background">
+    <h1 className='topmoverheader'></h1>
     <div className="container">
       <Bio className="bio" bio={bio}/>
+      <h1 className='topmoverheader'></h1>
       <Tabs trades={trades}/>
     </div>
+    <div className='footer'><p>@2022 Capitol Gains Inc. All Rights Reserved</p></div>
+    </div>
+    </>
   );
 }

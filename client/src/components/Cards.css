@@ -1,11 +1,11 @@
-.cards {
-    background: #fff;
+  .cards {
   }
   /*
   h1 {
     text-align: center;
   }
   */
+
   .cards__container {
     display: flex;
     flex-flow: column;
@@ -22,6 +22,7 @@
   
   .cards__items {
     margin-bottom: 24px;
+
   }
   
   .cards__item {
@@ -29,6 +30,8 @@
     flex: 1;
     border-radius: 10px;
     margin-right: 20px;
+    margin-bottom: 2rem;
+
   }
   
   .cards__item__link {
@@ -41,17 +44,21 @@
     border-radius: 10px;
     overflow: hidden;
     text-decoration: none;
+
+  }
+
+  .cards__item__text {
+
   }
   
   .cards__item__pic-wrap {
-    position: relative;
     width: 100%;
     padding-top: 80%;
+
   }
 
   
   .cards__item__img {
-    position: absolute;
     top: 0;
     right: 0;
     bottom: 0;
@@ -63,10 +70,14 @@
     max-height: 100%;
     object-fit: cover;
     transition: all 0.2s linear;
+
+    position: absolute;
+    z-index: 2;
   }
   
   .cards__item__info {
     padding: 0px 30px 10px;
+    text-align: center;
     color: black;
   }
 
@@ -74,71 +85,114 @@
     display: flex;
     align-items: center;
     justify-content: center;
+
+    box-shadow: 0 6px 20px rgba(56, 125, 255, 0.17);
+    -webkit-filter: drop-shadow(0 6px 20px rgba(56, 125, 255, 0.017));
+    filter: drop-shadow(0 6px 20px rgba(56, 125, 255, 0.017));
+    background-color: white;
+    border-radius: 50px;
+    margin-left: 40px;
+    margin-right: 40px;
+    padding: 5px;
+
+    position: relative;
+    z-index: 100;
   }
 
   .inputname {
-    margin-left: 5px;
     min-height: 32px;
-  }
-  
-  .searchBtn {
-    margin: 5px;
-    background-color: red;
-    text-align: center;
-    color: white;
-    font-size: 16px;
-    border: none;
-    cursor: pointer;
-    width: 100px;
-    border-radius: 5px;
-  }
-
-  .dropdown-option {
-    width: 102px;
+    margin-left: 10px;
   }
 
   .dropbtn {
-    margin-left: 5px;
-    background-color: #3498DB;
     text-align: center;
-    color: white;
-    width: 100px;
+    width: 130px;
     font-size: 16px;
     border: none;
     cursor: pointer;
-    border-radius: 5px;
-  }
-  
-  .dropbtn:hover, .dropbtn:focus {
-    background-color: #2980B9;
-  }
-  
-  .dropdown {
+    border-radius: 10px;
+    background: #699b2c;
+
     position: relative;
+    z-index: 10;
+  }
+
+  .clearbtn {
+    text-align: center;
+    display: inline;
+    width: 130px;
+    background: #699b2c;
+    border-radius: 10px;
+    color: #fff;
+    margin: 25px;
+
+    position: relative;
+    z-index: 10;
+  }
+
+  .arrow {
+    border: solid white;
+    border-width: 0 3px 3px 0;
     display: inline-block;
+    padding: 3px;
   }
   
-  .dropped {
+  .down {
+    transform: rotate(45deg);
+    -webkit-transform: rotate(45deg);
+  }
+
+  .dropbtn:hover, .dropdown-option:hover, .dropbtn:focus {
+    background-color: #3a6121 ;
+  }
+  
+  .dropdown-option {
+    width: 110px;
+    border-color: black;
+    background-color: #699b2c;
+    border-style: solid;
+    border-width: 1px;
+    text-align: center;
+    padding: 5px;
+    position: relative;
+    z-index: 101;
+
+  }
+  
+  .topbar {
+    background-color: #fff;
+  }
+
+  .dropdown {
+    margin: 25px;
+    display: inline-block;
   }
 
   .dropdown-content {
     display: none;
     position: absolute;
     background-color: #f1f1f1;
-    width: 100px;
+    width: 110px;
     overflow: auto;
     box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
-    z-index: 1;
+    
+    z-index: 99;
+
+    margin-left: 10px;
   }
-  
+
   .dropdown-content a {
     color: black;
     padding: 12px 16px;
     text-decoration: none;
     display: block;
+
   }
-  
-  .dropdown a:hover {background-color: #ddd;}
+
+  .sort a:hover {background-color: #ddd;}  
+  .party a:hover {background-color: #ddd;}
+  .state a:hover {background-color: #ddd;}
+  .congress a:hover {background-color: #ddd;}
   
   .show {display: block;}
     

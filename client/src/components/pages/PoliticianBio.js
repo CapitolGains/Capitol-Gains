@@ -105,9 +105,11 @@ const App = () => {
   */
 
   return (
+    <div className="background">
     <div className="container">
       <Bio className="bio" bio={bio}/>
       <Tabs trades={trades}/>
+    </div>
     </div>
   );
 }

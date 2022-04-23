@@ -1,4 +1,5 @@
 import React from 'react';
+import { Table, Container, Row, Col } from 'react-bootstrap'
 
 const Personal = ({ personal }) => {
     return (
@@ -48,7 +49,36 @@ const Personal = ({ personal }) => {
             </table>
 
         </div>
-
+       /*
+       <Container className='full_bio'>
+           <Row>
+               <Col md={3} sm={3}>
+                   <img alt="bioimage" src={personal.photo}/>
+                </Col>
+               <Col md={3} sm={3}>
+                <Table className="bio_info" borderless>
+                    <tbody>
+                        <tr>
+                            <td>Name: {personal.first_name}</td>
+                            <td>Transactions: {personal.transactions}</td>
+                        </tr>
+                        <tr>
+                            <td>Date of Birth: {personal.date_of_birth}</td>
+                            <td>Most Recent Trade: {personal.recent_trade}</td>
+                        </tr>
+                        <tr>
+                            <td>Party: {personal.party}</td>
+                            <td>Total Trade Volume: ${personal.trade_volume}</td>
+                        </tr>
+                        <tr><td>State: {personal.state}</td></tr>
+                        <tr><td>Chamber: {personal.chamber}</td></tr>
+                    </tbody>
+                </Table>
+                </Col>
+                <Col md={6} sm={6}></Col>
+            </Row>
+       </Container>
+       */
     )
 }
 

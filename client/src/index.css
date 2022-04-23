@@ -8,7 +8,7 @@
 
 body {
   font-family: 'Poppins', sans-serif;
-  background-color: green;
+  background-color: #e5e5e5c9;
 }
 
 /*.container {
@@ -26,33 +26,30 @@ body {
 
 .full_bio {
   background-color: white;
-
-  margin: 20px 0px 20px 0px;
-  border-radius: 5px;
-  border: 2px solid;
+  padding: 20px 0px 20px 0px;
+  border-radius: 50px;
 
   overflow-x: auto;
   overflow-y: hidden;
+  box-shadow: 0 6px 20px rgba(56, 125, 255, 0.17);
+  -webkit-filter: drop-shadow(0 6px 20px rgba(56, 125, 255, 0.017));
+  filter: drop-shadow(0 6px 20px rgba(56, 125, 255, 0.017));
 }
+
 
 
 .full_bio img {
-  max-width: 200px;
+  float: left;
   padding: 20px;
-  float: left;
-  /*
-  float: left;
-  */
+  border-radius: 50px;
+  /*max-width: 200px;*/
+  max-width:200px;
 }
 
-
 .bio_info {
-  /*
-  display: inline;
-  */
   max-width: 600px;
   float: left;
-  padding: 20px;
+  margin-top: 40px;
 }
 
 .bio_info p {
@@ -60,19 +57,18 @@ body {
   padding-right: 2px;
 }
 
-
 .bio_info td {
   padding-right: 50px;
 }
 
-/*
+
 .bio_info tr {
   text-align: left;
 }
 
 .bio_info .rightside {
   text-indent: 3em;
-}*/
+}
 
 
 
@@ -88,6 +84,10 @@ body {
 .bloc-tabs {
   float: left;
   padding-right: 20%;
+}
+
+.active-tabs {
+  background-color: black;
 }
 
 .content-tabs {
@@ -107,6 +107,10 @@ button {
   font-family: inherit;
 }
 
+.bloc-tabs button:hover {
+  background-color: lightgrey;
+}
+
 .btn:focus {
   outline: none;
 }
@@ -122,6 +126,7 @@ button {
 
 
 /***Trades***/
+/*
 .trade {
   margin: 0 auto;
   border: 3px solid black;
@@ -131,10 +136,17 @@ button {
   cursor: pointer;
   width: 100%;
 }
+*/
 
 .trades {
+  background-color: white;
+  border-radius: 10px;
   overflow-y: scroll;
-  max-height: 400px;
+  max-height: 100px;
+}
+
+.trades tr:hover {
+  background-color:rgb(222, 241, 247);
 }
 
 /***Tabs***/

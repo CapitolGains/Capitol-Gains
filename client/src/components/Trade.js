@@ -1,8 +1,9 @@
 import React from 'react';
+import { Table } from 'react-bootstrap';
 
 const Trade = ({ trade }) => {
     return (
-        <table className='trade'>
+        /*<table className='trade'>
             <tr>
                 <td>
                     <h3>{trade.date}</h3>
@@ -20,7 +21,15 @@ const Trade = ({ trade }) => {
                     <p>{trade.amount}</p>
                 </td>
             </tr>
-        </table>
+        </table>*/
+                <tr>
+                    <td>{trade.date}</td>
+                    <td>{trade.politician}</td>
+                    <td>{trade.stock}</td>
+                    <td>{trade.sector}</td>
+                    <td>{trade.buy_sell}</td>
+                    <td>{trade.amount}</td>
+                </tr>
     )
 }
 

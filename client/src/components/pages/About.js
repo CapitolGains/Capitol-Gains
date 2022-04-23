@@ -7,9 +7,11 @@ import placeholder from "../images/placeholder.jpg"
 const About = () => {
     return (
         <>
-        <Container>
-        <h1 className='teaminfoheader'>The Team</h1>
+        <div className="background">
+        <Container className='teaminfo-container'>
+        <h1 className='topmoverheader'></h1>
         <Row className='teaminfo'>
+        <h1 className='teaminfoheader'>The Team</h1>
                 <Col xl={4} lg={6} md={6} sm={12}>
                 <img className="teaminfopic" src={placeholder} alt="placeholder"/>
                 <h5>Ethan</h5>
@@ -56,8 +58,8 @@ const About = () => {
         </Row>
         </Container>
         <Container>
-        <h1 className='aboutdataheader'>About the Data</h1>
         <Row className='aboutdata'>
+        <h1 className='aboutdataheader'>About the Data</h1>
         <Col xl={4} lg={6} md={6} sm={12}>
                 <h5>Senate and House StockWatcher</h5>
                 <p>The SenateStockWatcher and HouseStockWatcher
@@ -102,6 +104,9 @@ const About = () => {
                 </Col>
         </Row>
         </Container>
+        <div className='footer'><p>@2022 Capitol Gains Inc. All Rights Reserved</p></div>
+        </div>
+        
     </>
     );
   };

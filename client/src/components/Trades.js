@@ -1,4 +1,5 @@
 import Trade from './Trade';
+import { Table } from 'react-bootstrap'
 
 function sorted(trades, sortMethod) {
     if (sortMethod === "new") { //sort by oldest
@@ -35,11 +36,25 @@ const trades = ({ trades }) => {
     sorted(trades, sortMethod);
 
     return (
-        <div className="trades">
-        {trades.map((trade) => (
-            <Trade  key={trade.id} trade={trade} />
-        ))}
-        </div>
+        //<div className="trades">
+        <Table className='trades' striped hover>
+            <thead>
+                <tr>
+                    <th>Date</th>
+                    <th>Politician</th>
+                    <th>Stock Name</th>
+                    <th>Industry</th>
+                    <th>Transaction Amount</th>
+                    <th>Gains/Losses</th>
+                </tr>
+            </thead>
+            <tbody>
+            {trades.map((trade) => (
+                <Trade  key={trade.id} trade={trade} />
+            ))}
+            </tbody>
+        </Table>
+        //</div>
     )
 }
 
