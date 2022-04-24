@@ -104,7 +104,6 @@ const About = () => {
                 </Col>
         </Row>
         </Container>
-        <div className='footer'><p>@2022 Capitol Gains Inc. All Rights Reserved</p></div>
         </div>
         
     </>

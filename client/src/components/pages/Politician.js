@@ -129,7 +129,6 @@ export default function Politician() {
       <h1 className='topmoverheader'></h1>
       <Tabs trades={trades}/>
     </div>
-    <div className='footer'><p>@2022 Capitol Gains Inc. All Rights Reserved</p></div>
     </div>
     </>
   );

@@ -29,6 +29,7 @@ const Trade = ({ trade }) => {
                     <td>{trade.sector}</td>
                     <td>{trade.buy_sell}</td>
                     <td>{trade.amount}</td>
+                    <td>{trade.gainslosses}</td>
                 </tr>
     )
 }

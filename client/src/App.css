@@ -5,10 +5,6 @@
   font-family: 'PT Sans', sans-serif;
 }
 
-.background {
-  background-color: #e5e5e5c9;
-}
-
 /*
 .homepage,
 .about,
@@ -47,11 +43,44 @@
 
 .footer {
   background: linear-gradient(90deg, #699b2c 0%, #2d4a1a 100%);
-  height: 35px;
+  height: 40px;
   padding-top: 5px;
+  bottom: 0;
+  width: 100%;
 }
 
 /*** Homepage ***/
+
+.homepage-background {
+  background-image: url("components/images/capitol.jpg") ;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  height: 840px;
+}
+
+.homepage-container {
+  text-align:center;
+  border-radius: 50px;
+  background-color: #e5e5e5c9;
+  padding: 20px;
+}
+
+.homepage-container p {
+  font-size: 35px;
+  padding-bottom: 20px;
+}
+
+.findinfo {
+  width: 70%;
+  margin: auto;
+}
+
+.featured-header {
+  float:left;
+}
+
+/*** Recent Transactions ***/
 .topmoverheader {
   padding-top:20px;
 }

@@ -7,6 +7,7 @@ import About from './components/pages/About';
 import Politicians from './components/pages/Politicians';
 import PoliticianBio from './components/pages/PoliticianBio';
 import Politician from "./components/pages/Politician";
+import RecentTransactions from './components/pages/RecentTransactions';
 
 function App() {
   return (
@@ -15,6 +16,7 @@ function App() {
         <Navbar />
         <Routes>
           <Route exact path='/' element={<Homepage/>} />
+          <Route path='/recenttransactions' element={<RecentTransactions/>} />
           <Route path='/about' element={<About/>} />
           <Route path='/politicians' element={<Politicians/>} />
           <Route path='politician' element={<Politician />} >

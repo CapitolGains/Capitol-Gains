@@ -44,6 +44,7 @@ const trades = ({ trades }) => {
                     <th>Politician</th>
                     <th>Stock Name</th>
                     <th>Industry</th>
+                    <th>Transaction Type</th>
                     <th>Transaction Amount</th>
                     <th>Gains/Losses</th>
                 </tr>

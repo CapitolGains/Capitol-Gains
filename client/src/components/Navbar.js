@@ -45,6 +45,15 @@ function Navbar() {
             </li>
             <li className='nav-item'>
               <NavLink
+                to='/recenttransactions'
+                className='nav-links'
+                onClick={closeMobileMenu}
+              >
+                Recent Transactions
+              </NavLink>
+            </li>
+            <li className='nav-item'>
+              <NavLink
                 to='/politicians'
                 className='nav-links'
                 onClick={closeMobileMenu}
