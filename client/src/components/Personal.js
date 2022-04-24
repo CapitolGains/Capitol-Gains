@@ -45,6 +45,9 @@ const Personal = ({ personal }) => {
                         <p className="graphtext">Recent:</p>
                     </td>
                 </tr>
+                <tr>
+                <p>Committee: Energy and Commerce</p>
+                </tr>
 
             </table>
 

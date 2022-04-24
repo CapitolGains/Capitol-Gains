@@ -8,21 +8,21 @@ const height = 400;
 const data = [
   {
     transactionDirection: 'Buy',
-    transactionTicker: 'AAPL',
+    transactionTicker: 'XOM',
     transactionAmount: '1,000-15,000',
     transactionAmountSimplified: 7000,
     transactionDate: '4-10-22',
   },
   {
     transactionDirection: 'Sell',
-    transactionTicker: 'VZ',
+    transactionTicker: 'CVX',
     transactionAmount: '1,000-15,000',
     transactionAmountSimplified: 2000,
     transactionDate: '4-8-22',
   },
   {
     transactionDirection: 'Buy',
-    transactionTicker: 'BTC',
+    transactionTicker: 'MRO',
     transactionAmount: '1,000-15,000',
     transactionAmountSimplified: 8000,
     transactionDate: '4-1-22',

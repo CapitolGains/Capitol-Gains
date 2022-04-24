@@ -3,6 +3,7 @@ import { useState } from "react";
 import Trades from './Trades'
 import BarChart from "./BarChart";
 import chartjsPieChart from './images/chartjsPieChart.jpg';
+import newPiechart from './images/newPiechart.png'
 
 //function Tabs(trades) {
 const Tabs = ({ trades }) => {
@@ -52,7 +53,7 @@ const Tabs = ({ trades }) => {
           className={toggleState === 3 ? "active-content" : "content"}
         >
           <h2>Most Profitable Stocks</h2>
-          <img src={chartjsPieChart}></img>
+          <img src={newPiechart}></img>
         </div>
       </div>
     </div>
