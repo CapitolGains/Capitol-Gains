@@ -59,7 +59,7 @@ export default function Homepage() {
                     </Col>
                     <Col lg={5} md={12} sm={12}>
                     <HomepageCard
-                            src={lincoln}
+                            src={"https://upload.wikimedia.org/wikipedia/commons/b/bd/Mitch_McConnell_2016_official_photo_%28cropped%29.jpg"}
                             text="Abraham Lincoln"
                             path={`/politician/3`}
                             key={3}
